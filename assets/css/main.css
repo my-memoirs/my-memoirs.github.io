@@ -1,0 +1,522 @@
+/*****************************
+Section:  Base Elements
+******************************/
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+h1,
+H2,
+H3,
+H4,
+H5 {
+  font-weight: 400;
+}
+
+html {
+  font-family: PresentFont, sans-serif, Arial, Helvetica;
+  direction: rtl;
+  margin: 0px;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/*****************************
+Section: Body
+******************************/
+body {
+  /*background-color: #f3f3f3;*/
+  background-color: #efefef;
+  color: #484848;
+  min-width: 320px;
+}
+
+.master-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: hidden;
+  flex-wrap: nowrap;
+}
+
+/*****************************
+Section:  #Intro
+******************************/
+.top-header {
+  display: flex;
+}
+
+.top-header .text-header {
+  flex: 1 1 70px;
+  margin: 0;
+  text-align: center;
+  color: #fff;
+  font-family: lalezarweb;
+  background-color: #881713;
+  font-size: 40px;
+}
+
+/*****************************
+Section:  #Intro
+******************************/
+.intro {
+  background-repeat: no-repeat;
+  background-image: url("/assets/imgs/mohammad-reza-haghiri.jpg");
+  /* /* background-image: -moz-linear-gradient(120deg, #262626e6 0%, #2d2d2de6 100%); */
+  flex: 1 1 580px;
+  display: flex;
+  background-size: 100% auto;
+  background-position-y: -20px;
+}
+
+.intro .bg-over {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-image: -moz-linear-gradient(120deg, #090909e6 0%, #2d2d2dcc 100%);
+  /* background-image: -moz-linear-gradient(120deg, #262626e6 0%, #2d2d2de6 100%); */
+  padding: 100px 0px 0px;
+  position: relative;
+}
+
+.intro .intro-content {
+  flex: 1;
+}
+
+.campaign-caption {
+  display: flex;
+  position: relative;
+  margin: 0 0;
+}
+
+.campaign-caption .title {
+  font-family: lalezarweb;
+  margin: 0 0;
+  line-height: 1;
+  display: block;
+  text-align: center;
+  font-size: 70px;
+  color: #fff;
+  padding-bottom: 30px;
+  text-shadow: #ccc -1px 1px 0, #b9b9b9 -2px 2px 0, #aaa -3px 3px 0, #a9a9a9 -4px 4px 0, #999 -5px 5px 0, rgba(0, 0, 0, .1) -6px 6px 1px, rgba(0, 0, 0, .1) -7px 0 5px, rgba(0, 0, 0, .3) -1px 1px 3px, rgba(0, 0, 0, .15) -3px 3px 5px, rgba(0, 0, 0, .2) -5px 5px 10px, rgba(0, 0, 0, .2) -10px 10px 10px, rgba(0, 0, 0, .1) -20px 20px 20px;
+  /* text-shadow: #ccc -1px 1px 0, #b9b9b9 -2px 2px 0, #aaa -3px 3px 0, #a9a9a9 -4px 4px 0, #999 -5px 5px 0, #0000001a -6px 6px 1px, #0000001a -7px 0 5px, #0000004d -1px 1px 3px, #0003 -3px 3px 5px; */
+}
+
+.campaign-subtitle {
+  text-align: center;
+  display: table;
+  margin: 0 auto;
+  position: relative;
+  top: -40px;
+  font-size: 1.2vw;
+  font-family: lalezarweb;
+  color: #b37f16;
+}
+
+.campaign-subtitle span {
+  margin: 0 10px;
+  display: table-row;
+}
+
+.campaign-wel {
+  font-family: lalezarweb;
+  font-size: 1.1vw;
+  text-align: center;
+  color: #ccc;
+  z-index: 2;
+  margin: 0 0;
+}
+
+#endIntroSection {
+  /* background: #ff5a5f; */
+  background: transparent;
+  /* fill: #41474c; */
+  fill: #fff;
+}
+
+/*****************************
+Section: .section-container defualt setting
+******************************/
+.section-container .title-box {
+  margin: 0 auto 20px;
+}
+
+.section-container .title-box p:nth-child(1),
+.section-container .title-box p:nth-child(3),
+.section-container .title-box p:nth-child(4),
+.section-container .title-box h2 {
+  font-family: LalezarWeb;
+  line-height: 0.9;
+  text-align: center;
+  padding: 0 0;
+  margin: 0 0;
+}
+
+.section-container .title-box h2 {
+  font-size: 4.0vw;
+  color: #bd2828;
+  margin-bottom: 10px;
+}
+
+.section-container .title-box p:nth-child(1) {
+  font-size: 2.8vw;
+  color: #bd2828;
+}
+
+.section-container .title-box p:nth-child(3),
+.section-container .title-box p:nth-child(4) {
+  font-size: 1.8vw;
+  color: #223548;
+  line-height: 1.2;
+}
+
+/*****************************
+Section: mokaafaat
+******************************/
+.content-box {
+  display: block;
+  margin: 25px 0;
+}
+
+.content-box>* {
+  margin: 0px auto;
+  line-height: 1.;
+  font-size: 16px;
+  width: 800px;
+}
+
+.content-box>p+p {
+  margin-top: 10px;
+}
+
+.content-box h3 {
+  font-family: LalezarWeb;
+  margin-top: 10px;
+  font-size: 25px;
+}
+
+/*****************************
+Section: my-store
+******************************/
+.my-store {
+  background-color: #fff;
+  padding-top: 10px;
+}
+
+/*****************************
+Section: society
+******************************/
+.society {
+  background-color: #fff;
+  padding-bottom: 80px;
+}
+
+.society .title-box {
+  margin: 0 auto 20px;
+}
+
+.society .title-box p:nth-child(1) {
+  font-size: 5.0vw;
+  color: #bd2828;
+  line-height: 0.9;
+}
+
+.society .title-box p:nth-child(2) {
+  font-size: 2.0vw;
+  color: #223548;
+  margin-bottom: 10px;
+}
+
+.society .title-box p {
+  font-family: LalezarWeb;
+  color: #223548;
+  text-align: center;
+  margin: 0 0;
+  line-height: 1.9;
+  padding: 0 0;
+}
+
+/*****************************
+Section: mokaafaat
+******************************/
+.mokaafaat {
+  background-color: #fff;
+  padding-bottom: 80px;
+}
+
+.mokaafaat .title-box {
+  margin: 0 auto 20px;
+}
+
+.mokaafaat .title-box p:nth-child(1) {
+  font-size: 5.0vw;
+  color: #bd2828;
+  line-height: 0.9;
+}
+
+.mokaafaat .title-box p:nth-child(2) {
+  font-size: 2.0vw;
+  color: #223548;
+  margin-bottom: 10px;
+}
+
+.mokaafaat .title-box p {
+  font-family: LalezarWeb;
+  color: #223548;
+  text-align: center;
+  margin: 0 0;
+  line-height: 1.9;
+  padding: 0 0;
+}
+
+.mokaafaat ul.list {
+  list-style-type: none;
+  font-size: 16px;
+  line-height: 2.1;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+#poets-slider {
+  margin: 20px auto;
+}
+
+#poets-slider .owl-stage {
+  display: flex;
+}
+
+#poets-slider.owl-rtl .owl-item {
+  flex: 1;
+  display: flex;
+}
+
+#poets-slider .item {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  border-radius: 3px;
+  border: 1px solid #aaaaaa;
+  margin: 5px 0px;
+}
+
+#poets-slider .item .caption {
+  flex: 0 1 auto;
+  background: #dadada;
+  ;
+  border-radius: 2px 2px 0px 0px;
+  font-family: lalezarweb;
+  font-size: 14px;
+  text-align: center;
+}
+
+#poets-slider .item .content {
+  flex: 1;
+  justify-content: center;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0px 0px 2px 2px;
+  padding: 5px 5px;
+  font-size: 18px;
+}
+
+#poets-slider .item .content {
+  align-self: center;
+}
+
+#poets-slider .item .content.poetry div {
+  text-align: center;
+}
+
+#poets-slider .item .content.poetry div:nth-child(1) {
+  padding-left: 100px;
+}
+
+#poets-slider .item .content.poetry div:nth-child(2) {
+  padding-right: 100px;
+}
+
+#poets-slider .item .content.quotes {
+  flex-direction: column;
+  text-align: center;
+}
+
+/*****************************
+Section: mystore
+******************************/
+.why-campaign {
+  background-color: #fff;
+  padding: 80px 0;
+}
+
+.why-campaign .title-box {
+  margin: 0 auto 20px;
+}
+
+.why-campaign .title-box p:nth-child(1) {
+  font-size: 3.0vw;
+  color: #bd2828;
+  line-height: 0.9;
+}
+
+.why-campaign .title-box p:nth-child(2) {
+  font-size: 5.0vw;
+  color: #bd2828;
+  line-height: 0.9;
+}
+
+.why-campaign .title-box p:nth-child(3) {
+  font-size: 2.0vw;
+  color: #223548;
+  margin-bottom: 20px;
+}
+
+.why-campaign .title-box p {
+  font-family: LalezarWeb;
+  color: #223548;
+  text-align: center;
+  margin: 0 0;
+  line-height: 1.9;
+  padding: 0 0;
+}
+
+/*****************************
+Section: mys11tore
+******************************/
+.my-st1ory {
+  padding: 80px 0;
+}
+
+.my-s1tory .title-box {
+  margin: 0 auto 20px;
+}
+
+.my-sto1ry .title-box p:nth-child(1) {
+  font-size: 5.0vw;
+  color: #bd2828;
+  line-height: 0.9;
+}
+
+.my-s1tory .title-box p:nth-child(2) {
+  font-size: 2.0vw;
+  color: #223548;
+  margin-bottom: 10px;
+}
+
+.my-st1ory .title-box p {
+  font-family: LalezarWeb;
+  color: #223548;
+  text-align: center;
+  margin: 0 0;
+  line-height: 1.9;
+  padding: 0 0;
+}
+
+.my-s1tory ul.list {
+  list-style-type: none;
+}
+
+.my-1story q {
+  margin: 20px auto;
+  display: block;
+  text-align: center;
+  width: 80%;
+  border: 1px solid #eee;
+  background-color: #ff6b63;
+  font-family: LalezarWeb;
+  color: #fff;
+  font-size: 35px;
+}
+
+/*****************************
+Section:
+******************************/
+footer {
+  background: #32363b;
+  padding: 10px 20px;
+}
+
+.social-network {
+  display: block;
+  border-bottom: 2px solid #fff;
+}
+
+.social-network a {
+  color: #eee;
+  margin: 5px;
+  font-size: 25px;
+}
+
+.social-network a:hover {
+  color: #ff6b63;
+}
+
+/*****************************
+Componnet:
+******************************/
+.content-slider,
+.content-box>.video-js {
+  margin: 50px auto;
+}
+
+.content-slider {
+  margin-bottom: 20px;
+}
+
+.content-slider .owl-stage {
+  display: flex;
+}
+
+.content-slider .owl-stage::after {
+  content: "";
+}
+
+.content-slider.owl-rtl .owl-item {
+  flex: 1;
+  display: flex;
+}
+
+.content-slider .item {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  align-self: center;
+}
+
+.content-slider .item figure {
+  margin: 5px 10px;
+  border: 1px solid #eee;
+  display: block;
+  overflow: hidden
+}
+
+.content-slider .item img {
+  width: 100%;
+}
+
+.content-slider .item figure figcaption {
+  background: #b3aeae;
+  text-align: center;
+  font-family: lalezarweb;
+}
+
+.content-slider .item .center-in-slide {
+  align-self: center;
+  font-family: lalezarweb;
+  font-size: 20px;
+  margin: 5px 0;
+}
